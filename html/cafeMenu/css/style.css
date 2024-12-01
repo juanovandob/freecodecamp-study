@@ -11,16 +11,42 @@ h2 {
 
 h1 {
   font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 h2 {
   font-size: 30px;
 }
 
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
 body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
+  padding: 20px;
 }
+
+img {
+  display: block; /* Cambiar la imagen a un elemento de bloque */
+  margin-left: auto; /* Centrar la imagen */
+  margin-right: auto; /* Centrar la imagen */
+  margin-top: -25px;
+  max-width: 100%; /* Hace que la imagen no se desborde de su contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */
+}
+/*codigo optimizado
+img {
+  display: block;
+  margin: -20px auto 0;  --> Se juntan los valores del margin y se coloca 0 para el fondo
+  max-width: 100%;
+  height: auto;
+}
+*/
 
 .menu {
   max-width: 500px;
@@ -28,6 +54,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4),
+    inset 0 0 10px rgba(139, 69, 19, 0.7);
 }
 
 .flavor,
@@ -41,10 +70,48 @@ body {
   width: 25%;
 }
 
+/* Aplica estilos a <p> dentro de .item - no aplica a los demas */
 .item p {
+  font-size: 18px;
   display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+
+/* A better way to apply margin top and bottom
+margin: 5px 0;
+top and bottom margin 5px, left and right margin 0
+*/
 
 .established {
   font-style: italic;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+/* FOOTER */
+footer {
+  font-size: 14px;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:visited {
+  color: gray;
+}
+
+footer a:hover {
+  color: brown;
+}
+
+footer a:active {
+  color: brown;
+}
+
+.address {
+  margin-bottom: 5px;
 }

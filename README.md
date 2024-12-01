@@ -24,7 +24,3 @@ En este repositorio encontrarás el código y los apuntes que he realizado mient
 ## Enlace a freeCodeCamp
 
 Para más información sobre los cursos y certificaciones, visita [freeCodeCamp](https://www.freecodecamp.org/learn).
-
----
-
-¡Espero que te sea útil! ¿Hay algo más en lo que pueda ayudarte?
